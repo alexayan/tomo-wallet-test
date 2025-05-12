@@ -18,8 +18,8 @@ importers:
         specifier: ^5.74.3
         version: 5.74.4(react@19.1.0)
       '@tomo-inc/tomo-web-sdk':
-        specifier: ^1.0.13
-        version: 1.0.13(d27583a1133691870acbf7f37bf4298c)
+        specifier: ^1.0.19
+        version: 1.0.19(c4f96ffa84464ad85011d442e56b8d13)
       next:
         specifier: 15.3.0
         version: 15.3.0(@babel/core@7.26.10)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -3743,14 +3743,14 @@ packages:
   '@telegram-apps/types@1.2.1':
     resolution: {integrity: sha512-so4HLh7clur0YyMthi9KVIgWoGpZdXlFOuQjk3+Q5NAvJZ11nAheBSwPlGw/Ko92+zwvrSBE/lQyN2+p17RP+w==}
 
-  '@tomo-inc/social-wallet-sdk@1.1.12':
-    resolution: {integrity: sha512-TP+Idf5Z9A4Md9L8UToTnqkl1AWBKMJroJ6KcMOjs4qezuXLi/qZByJCTtbqP4THaMKN+4/ko1s7tJb3je7bGw==}
+  '@tomo-inc/shared-type@1.0.1':
+    resolution: {integrity: sha512-LyAkCmBjCjFTFmEW9xeHP7h3s0NBhcAK/U90G8Aq7v890IJ/ixrqy2b7gzq5smWnV3Zpy/qLiHSNXeRABn2ntw==}
 
-  '@tomo-inc/social-wallet-sdk@1.1.7':
-    resolution: {integrity: sha512-I8/vTexYumZFmBg6CLYnpROdmp2sJi0WNkqEemDVIpZwkriU90fTkNS5PhxoH5SgJk8mTqF8n7Zv7q4hjkX1HQ==}
+  '@tomo-inc/social-wallet-sdk@1.1.14':
+    resolution: {integrity: sha512-Qqu7ieEZryHBoGwXAJFGvrCYKJOZiGcqwABqM5zUmAXrCBsZ0WZGTs8xclLZPYLAik1sxNWpcnWKCUVVedVE+g==}
 
-  '@tomo-inc/tomo-evm-kit@0.0.25':
-    resolution: {integrity: sha512-nXP8diLDSwd1qjfju4dfyMaua97gNffPSiE6Qb9tltbY6RhDvqrHcRxyHCDtZKDf88nqa+GxdxAhatsyIkjE8Q==}
+  '@tomo-inc/tomo-evm-kit@0.0.31':
+    resolution: {integrity: sha512-uDq/J2yY7HSPd74td79s5rj6MB5OoW2uVQHPJLRSJmSfSlhcLlW08bcDpQsnSy4chA3R0ujLx/u2UfkwfG6qFw==}
     engines: {node: '>=12.4'}
     peerDependencies:
       '@tanstack/react-query': '>=5.0.0'
@@ -3774,20 +3774,23 @@ packages:
       react: ^18
       react-dom: ^18
 
-  '@tomo-inc/tomo-web-sdk@1.0.13':
-    resolution: {integrity: sha512-SbcuwTX2boaRgJNBBdxVZggeKqgMKcmPwJ0GLspmnxHlXnub9ZGoTT0KkS5EwpEAjkGqxm0NIBGwIzJ3pN6FDg==}
+  '@tomo-inc/tomo-web-sdk@1.0.19':
+    resolution: {integrity: sha512-Tli6KFC9td5+e/K/1/wL2i4PWx61vYpWPJgjReysdji8RqUT/SHDEz9zyhNUTU6r1Cue8v3la0rhUoLv53Qtcg==}
+    peerDependencies:
+      '@wagmi/connectors': 2.x
+      '@wagmi/core': 2.x
+      react: '>=18'
+      react-dom: '>=18'
+      wagmi: '>=2.14'
+
+  '@tomo-inc/uikit-lite@0.0.18':
+    resolution: {integrity: sha512-7wW9iNP+y7zBtAHXgFeOYBemXlkriw9AA3kaVQQY0/3zlGQ5rGcjoRVNYpQhJMWjlYjrrCPowwzuLOSeohFjMg==}
     peerDependencies:
       react: '>=18'
       react-dom: '>=18'
 
-  '@tomo-wallet/uikit-lite@0.0.17':
-    resolution: {integrity: sha512-50lsEuxIuspn0zPuRvzqfGAX5UiixKLX5K4/UDZhOfil/8vZDoaffimJ5rlnPNjpkpGE8+vBk99Bcnj2v2x1YA==}
-    peerDependencies:
-      react: '>=18'
-      react-dom: '>=18'
-
-  '@tomo-wallet/uikit@0.0.15':
-    resolution: {integrity: sha512-VLLbjHNcq3KvNwuZSB5l5vmeUvqVh89RlF2btqOmzldtBBrpx4YncrT+2ZCVoHQ4GD/8m7VFXxMkRXnpfsybRw==}
+  '@tomo-inc/uikit@0.0.16':
+    resolution: {integrity: sha512-5fu2EHlQNNc+SMS3pmsdU9o/X5q6Q5OyIqPWItIKW/paVKVU5/rgn2SJwZiodOYB8xFM5az1rw7ZjeQ8VlOmJA==}
     peerDependencies:
       react: '>=18'
       react-dom: '>=18'
@@ -15215,7 +15218,9 @@ snapshots:
 
   '@telegram-apps/types@1.2.1': {}
 
-  '@tomo-inc/social-wallet-sdk@1.1.12(@wallet-standard/core@1.1.1)(bufferutil@4.0.9)(expo@52.0.46(@babel/core@7.26.10)(@babel/preset-env@7.26.9(@babel/core@7.26.10))(bufferutil@4.0.9)(graphql@16.10.0)(react-native@0.79.1(@babel/core@7.26.10)(@types/react@19.1.2)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10))(react@19.1.0)(utf-8-validate@5.0.10))(fastestsmallesttextencoderdecoder@1.0.22)(got@11.8.6)(react-native@0.79.1(@babel/core@7.26.10)(@types/react@19.1.2)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10))(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.22.4)':
+  '@tomo-inc/shared-type@1.0.1': {}
+
+  '@tomo-inc/social-wallet-sdk@1.1.14(@wallet-standard/core@1.1.1)(bufferutil@4.0.9)(expo@52.0.46(@babel/core@7.26.10)(@babel/preset-env@7.26.9(@babel/core@7.26.10))(bufferutil@4.0.9)(graphql@16.10.0)(react-native@0.79.1(@babel/core@7.26.10)(@types/react@19.1.2)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10))(react@19.1.0)(utf-8-validate@5.0.10))(fastestsmallesttextencoderdecoder@1.0.22)(got@11.8.6)(react-native@0.79.1(@babel/core@7.26.10)(@types/react@19.1.2)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10))(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.22.4)':
     dependencies:
       '@aptos-labs/ts-sdk': 1.38.0(axios@1.8.4)(got@11.8.6)
       '@aptos-labs/wallet-standard': 0.3.1(@aptos-labs/ts-sdk@1.38.0(axios@1.8.4)(got@11.8.6))(@wallet-standard/core@1.1.1)
@@ -15223,6 +15228,7 @@ snapshots:
       '@mysten/wallet-standard': 0.14.5(typescript@5.8.3)
       '@solana/spl-token': 0.4.13(@solana/web3.js@1.98.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(bufferutil@4.0.9)(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.8.3)(utf-8-validate@5.0.10)
       '@solana/web3.js': 1.98.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@tomo-inc/shared-type': 1.0.1
       '@types/crypto-js': 4.2.0
       '@walletconnect/jsonrpc-http-connection': 1.0.8
       '@walletconnect/jsonrpc-provider': 1.0.14
@@ -15255,45 +15261,11 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@tomo-inc/social-wallet-sdk@1.1.7(bufferutil@4.0.9)(expo@52.0.46(@babel/core@7.26.10)(@babel/preset-env@7.26.9(@babel/core@7.26.10))(bufferutil@4.0.9)(graphql@16.10.0)(react-native@0.79.1(@babel/core@7.26.10)(@types/react@19.1.2)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10))(react@19.1.0)(utf-8-validate@5.0.10))(fastestsmallesttextencoderdecoder@1.0.22)(react-native@0.79.1(@babel/core@7.26.10)(@types/react@19.1.2)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10))(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.22.4)':
-    dependencies:
-      '@mysten/sui': 1.28.0(typescript@5.8.3)
-      '@solana/spl-token': 0.4.13(@solana/web3.js@1.98.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(bufferutil@4.0.9)(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.8.3)(utf-8-validate@5.0.10)
-      '@solana/web3.js': 1.98.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-      '@types/crypto-js': 4.2.0
-      '@walletconnect/jsonrpc-http-connection': 1.0.8
-      '@walletconnect/jsonrpc-provider': 1.0.14
-      '@walletconnect/jsonrpc-utils': 1.0.8
-      axios: 1.8.4
-      bn.js: 5.2.1
-      buffer: 6.0.3
-      crypto-js: 4.2.0
-      eventemitter3: 5.0.1
-      js-sha256: 0.11.0
-      loglevel: 1.9.2
-      querystring: 0.2.1
-      tonweb: 0.0.66(expo@52.0.46(@babel/core@7.26.10)(@babel/preset-env@7.26.9(@babel/core@7.26.10))(bufferutil@4.0.9)(graphql@16.10.0)(react-native@0.79.1(@babel/core@7.26.10)(@types/react@19.1.2)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10))(react@19.1.0)(utf-8-validate@5.0.10))(react-native@0.79.1(@babel/core@7.26.10)(@types/react@19.1.2)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10))
-      tronweb: 6.0.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-      uuid: 11.1.0
-      viem: 2.23.15(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.22.4)
-    transitivePeerDependencies:
-      - '@gql.tada/svelte-support'
-      - '@gql.tada/vue-support'
-      - bufferutil
-      - debug
-      - encoding
-      - expo
-      - fastestsmallesttextencoderdecoder
-      - react-native
-      - typescript
-      - utf-8-validate
-      - zod
-
-  '@tomo-inc/tomo-evm-kit@0.0.25(1f39c918aabed53495f758400355cc8d)':
+  '@tomo-inc/tomo-evm-kit@0.0.31(51236f6ed5ab663609e5abf45ebe6908)':
     dependencies:
       '@tanstack/react-query': 5.74.4(react@19.1.0)
-      '@tomo-inc/social-wallet-sdk': 1.1.7(bufferutil@4.0.9)(expo@52.0.46(@babel/core@7.26.10)(@babel/preset-env@7.26.9(@babel/core@7.26.10))(bufferutil@4.0.9)(graphql@16.10.0)(react-native@0.79.1(@babel/core@7.26.10)(@types/react@19.1.2)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10))(react@19.1.0)(utf-8-validate@5.0.10))(fastestsmallesttextencoderdecoder@1.0.22)(react-native@0.79.1(@babel/core@7.26.10)(@types/react@19.1.2)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10))(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.22.4)
-      '@tomo-wallet/uikit-lite': 0.0.17(@babel/runtime@7.27.0)(@types/react@19.1.2)(core-js-pure@3.41.0)(prop-types@15.8.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@tomo-inc/social-wallet-sdk': 1.1.14(@wallet-standard/core@1.1.1)(bufferutil@4.0.9)(expo@52.0.46(@babel/core@7.26.10)(@babel/preset-env@7.26.9(@babel/core@7.26.10))(bufferutil@4.0.9)(graphql@16.10.0)(react-native@0.79.1(@babel/core@7.26.10)(@types/react@19.1.2)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10))(react@19.1.0)(utf-8-validate@5.0.10))(fastestsmallesttextencoderdecoder@1.0.22)(got@11.8.6)(react-native@0.79.1(@babel/core@7.26.10)(@types/react@19.1.2)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10))(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.22.4)
+      '@tomo-inc/uikit-lite': 0.0.18(@babel/runtime@7.27.0)(@types/react@19.1.2)(core-js-pure@3.41.0)(prop-types@15.8.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@vanilla-extract/css': 1.15.5(babel-plugin-macros@3.1.0)
       '@vanilla-extract/dynamic': 2.1.2
       '@vanilla-extract/sprinkles': 1.6.3(@vanilla-extract/css@1.15.5(babel-plugin-macros@3.1.0))
@@ -15315,6 +15287,7 @@ snapshots:
       - '@gql.tada/svelte-support'
       - '@gql.tada/vue-support'
       - '@types/react'
+      - '@wallet-standard/core'
       - babel-plugin-macros
       - bufferutil
       - core-js-pure
@@ -15322,6 +15295,7 @@ snapshots:
       - encoding
       - expo
       - fastestsmallesttextencoderdecoder
+      - got
       - prop-types
       - react-native
       - supports-color
@@ -15350,7 +15324,7 @@ snapshots:
     transitivePeerDependencies:
       - starknet
 
-  '@tomo-inc/tomo-web-sdk@1.0.13(d27583a1133691870acbf7f37bf4298c)':
+  '@tomo-inc/tomo-web-sdk@1.0.19(c4f96ffa84464ad85011d442e56b8d13)':
     dependencies:
       '@aptos-labs/ts-sdk': 1.38.0(axios@1.8.4)(got@11.8.6)
       '@aptos-labs/wallet-adapter-react': 4.1.5(@aptos-labs/ts-sdk@1.38.0(axios@1.8.4)(got@11.8.6))(@mizuwallet-sdk/core@1.4.0(@aptos-labs/ts-sdk@1.38.0(axios@1.8.4)(got@11.8.6))(@mizuwallet-sdk/protocol@0.0.6)(graphql-request@7.1.2(graphql@16.10.0)))(@mizuwallet-sdk/protocol@0.0.6)(@telegram-apps/bridge@1.9.2)(@types/react@19.1.2)(@wallet-standard/core@1.1.1)(aptos@1.21.0)(axios@1.8.4)(got@11.8.6)(react@19.1.0)
@@ -15368,14 +15342,16 @@ snapshots:
       '@solana/web3.js': 1.98.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       '@suiet/wallet-kit': 0.3.4(@mysten/sui@1.28.0(typescript@5.8.3))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react-native@0.79.1(@babel/core@7.26.10)(@types/react@19.1.2)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10))(react@19.1.0)(typescript@5.8.3)
       '@tanstack/react-query': 5.74.4(react@19.1.0)
-      '@tomo-inc/social-wallet-sdk': 1.1.12(@wallet-standard/core@1.1.1)(bufferutil@4.0.9)(expo@52.0.46(@babel/core@7.26.10)(@babel/preset-env@7.26.9(@babel/core@7.26.10))(bufferutil@4.0.9)(graphql@16.10.0)(react-native@0.79.1(@babel/core@7.26.10)(@types/react@19.1.2)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10))(react@19.1.0)(utf-8-validate@5.0.10))(fastestsmallesttextencoderdecoder@1.0.22)(got@11.8.6)(react-native@0.79.1(@babel/core@7.26.10)(@types/react@19.1.2)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10))(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.22.4)
-      '@tomo-inc/tomo-evm-kit': 0.0.25(1f39c918aabed53495f758400355cc8d)
+      '@tomo-inc/social-wallet-sdk': 1.1.14(@wallet-standard/core@1.1.1)(bufferutil@4.0.9)(expo@52.0.46(@babel/core@7.26.10)(@babel/preset-env@7.26.9(@babel/core@7.26.10))(bufferutil@4.0.9)(graphql@16.10.0)(react-native@0.79.1(@babel/core@7.26.10)(@types/react@19.1.2)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10))(react@19.1.0)(utf-8-validate@5.0.10))(fastestsmallesttextencoderdecoder@1.0.22)(got@11.8.6)(react-native@0.79.1(@babel/core@7.26.10)(@types/react@19.1.2)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10))(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.22.4)
+      '@tomo-inc/tomo-evm-kit': 0.0.31(51236f6ed5ab663609e5abf45ebe6908)
       '@tomo-inc/tomo-wallet-provider': 1.1.15(@bitcoinerlab/secp256k1@1.2.0)(@cosmjs/stargate@0.32.4(bufferutil@4.0.9)(utf-8-validate@5.0.10))(@keplr-wallet/types@0.12.221(starknet@6.24.1))(@keystonehq/animated-qr@0.10.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(@keystonehq/keystone-sdk@0.9.0)(@keystonehq/sdk@0.19.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(@scure/bip32@1.6.2)(bitcoinjs-lib@6.1.7)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(starknet@6.24.1)
-      '@tomo-wallet/uikit': 0.0.15(@babel/runtime@7.27.0)(@types/react@19.1.2)(core-js-pure@3.41.0)(prop-types@15.8.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@tomo-inc/uikit': 0.0.16(@babel/runtime@7.27.0)(@types/react@19.1.2)(core-js-pure@3.41.0)(prop-types@15.8.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@tronweb3/tronwallet-abstract-adapter': 1.1.9(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       '@tronweb3/tronwallet-adapter-react-hooks': 1.1.10(bufferutil@4.0.9)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(utf-8-validate@5.0.10)
       '@tronweb3/tronwallet-adapters': 1.2.8(@react-native-async-storage/async-storage@1.24.0(react-native@0.79.1(@babel/core@7.26.10)(@types/react@19.1.2)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10)))(@types/react@19.1.2)(bufferutil@4.0.9)(react@19.1.0)(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.22.4)
       '@types/lodash': 4.17.16
+      '@wagmi/connectors': 5.7.12(@react-native-async-storage/async-storage@1.24.0(react-native@0.79.1(@babel/core@7.26.10)(@types/react@19.1.2)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10)))(@types/react@19.1.2)(@wagmi/core@2.16.7(@tanstack/query-core@5.74.4)(@types/react@19.1.2)(react@19.1.0)(typescript@5.8.3)(use-sync-external-store@1.5.0(react@19.1.0))(viem@2.23.15(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.22.4)))(bufferutil@4.0.9)(react@19.1.0)(typescript@5.8.3)(utf-8-validate@5.0.10)(viem@2.23.15(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.22.4))(zod@3.22.4)
+      '@wagmi/core': 2.16.7(@tanstack/query-core@5.74.4)(@types/react@19.1.2)(react@19.1.0)(typescript@5.8.3)(use-sync-external-store@1.5.0(react@19.1.0))(viem@2.23.15(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.22.4))
       animate.css: 4.1.1
       aptos: 1.21.0
       axios: 1.8.4
@@ -15403,6 +15379,7 @@ snapshots:
       tronweb: 6.0.2(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       viem: 2.23.15(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.22.4)
       vite-plugin-node-polyfills: 0.17.0(rollup@4.40.0)(vite@5.4.18(@types/node@20.17.30)(lightningcss@1.29.2)(terser@5.39.0))
+      wagmi: 2.14.16(@react-native-async-storage/async-storage@1.24.0(react-native@0.79.1(@babel/core@7.26.10)(@types/react@19.1.2)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10)))(@tanstack/query-core@5.74.4)(@tanstack/react-query@5.74.4(react@19.1.0))(@types/react@19.1.2)(bufferutil@4.0.9)(react@19.1.0)(typescript@5.8.3)(utf-8-validate@5.0.10)(viem@2.23.15(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.22.4))(zod@3.22.4)
     transitivePeerDependencies:
       - '@aptos-labs/wallet-adapter-core'
       - '@azure/app-configuration'
@@ -15435,7 +15412,6 @@ snapshots:
       - '@upstash/redis'
       - '@vercel/blob'
       - '@vercel/kv'
-      - '@wagmi/core'
       - '@wallet-standard/core'
       - aws4fetch
       - babel-plugin-macros
@@ -15461,11 +15437,10 @@ snapshots:
       - uploadthing
       - utf-8-validate
       - vite
-      - wagmi
       - ws
       - zod
 
-  '@tomo-wallet/uikit-lite@0.0.17(@babel/runtime@7.27.0)(@types/react@19.1.2)(core-js-pure@3.41.0)(prop-types@15.8.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+  '@tomo-inc/uikit-lite@0.0.18(@babel/runtime@7.27.0)(@types/react@19.1.2)(core-js-pure@3.41.0)(prop-types@15.8.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@emotion/react': 11.14.0(@types/react@19.1.2)(react@19.1.0)
       '@emotion/styled': 11.14.0(@emotion/react@11.14.0(@types/react@19.1.2)(react@19.1.0))(@types/react@19.1.2)(react@19.1.0)
@@ -15488,7 +15463,7 @@ snapshots:
       - prop-types
       - supports-color
 
-  '@tomo-wallet/uikit@0.0.15(@babel/runtime@7.27.0)(@types/react@19.1.2)(core-js-pure@3.41.0)(prop-types@15.8.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+  '@tomo-inc/uikit@0.0.16(@babel/runtime@7.27.0)(@types/react@19.1.2)(core-js-pure@3.41.0)(prop-types@15.8.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@emotion/react': 11.14.0(@types/react@19.1.2)(react@19.1.0)
       '@emotion/styled': 11.14.0(@emotion/react@11.14.0(@types/react@19.1.2)(react@19.1.0))(@types/react@19.1.2)(react@19.1.0)
