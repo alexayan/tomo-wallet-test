@@ -16,6 +16,7 @@ module.exports = {
   bleClientWebpackPlugin: true,
   webpack(config, {isServer}) {
     config.resolve.alias['@'] = path.resolve(`${__dirname}/src/`)
+    config.resolve.alias['@mysten/sui'] = path.resolve(`${__dirname}/node_modules/@mysten/sui`)
 
     config.module.rules.push({
       test: /\.svg$/i,

@@ -20,7 +20,7 @@
     "jsx": "preserve",
     "incremental": true,
     "noImplicitAny": false,
-    "useDefineForClassFields": false
+    "useDefineForClassFields": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.svg"],
   "exclude": ["node_modules"]
