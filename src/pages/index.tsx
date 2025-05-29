@@ -25,7 +25,7 @@ export default function Home() {
     const tx = new Transaction();
     const depositAmount = 100000000; // 0.1 Sui
     const [finalCoin] = tx.splitCoins(tx.gas, [depositAmount])
-    await depositCoin(tx, pool.Sui, finalCoin, depositAmount)
+    await depositCoin(tx as any, pool.Sui, finalCoin, depositAmount)
     tx.setSender(currentAccount!.address)
     const resp = await signAndExecuteTransaction({
       transaction: tx as any
